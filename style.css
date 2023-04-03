@@ -126,10 +126,41 @@ li{
 
 .circulo{
     width: 100%;
-    height: 100%;
+    height: 107%;
     background: #81a5c4;
     position: absolute;
     top: 0;
     left: 0;
     clip-path: circle(600px at right 1000px);
+}
+
+@media screen and (max-width: 1030px){
+    ul {
+       gap: 35px;
+    }
+
+    .caixa-azul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .circulo {
+        height: 150%;
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+  ul {
+    display: none;
+  }
+
+  .iphone {
+    width: 200px;
+  }
+
+  .caixa-azul {
+    padding: 30;
+  }
 }
