@@ -126,41 +126,42 @@ li{
 
 .circulo{
     width: 100%;
-    height: 107%;
+    height: 100%;
     background: #81a5c4;
     position: absolute;
     top: 0;
     left: 0;
-    clip-path: circle(600px at right 1000px);
+    clip-path: circle(430px at right 750px);
 }
 
-@media screen and (max-width: 1030px){
+@media screen and (min-width:300px) and (max-width:600px) {
     ul {
-       gap: 35px;
+        display: none;
     }
-
+     
     .caixa-azul {
-        flex-direction: column;
-        justify-content: center;
+        margin: 0;
+        padding: 0;
     }
 
-    .circulo {
-        height: 150%;
+    .iphone {
+        width: 120px;
+        margin: 0;
+        position: absolute;
+        margin-top: 34rem;
+    }
+    
+    .cancelar {
         display: none;
     }
 
-}
+    .circulo {
+        clip-path: circle(29.4% at 50% 100%);
+    }
 
-@media screen and (max-width: 650px) {
-  ul {
-    display: none;
-  }
-
-  .iphone {
-    width: 200px;
-  }
-
-  .caixa-azul {
-    padding: 30;
-  }
+    .caixa-azul {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
 }
